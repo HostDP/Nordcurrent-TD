@@ -15,38 +15,53 @@ TagManager:
   - 
   - 
   - 
-  - Foreground
-  - Character
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
   - 
   - 
   - 
   - 
   - 
   - Background
+  - FarEnemy
+  - HighGround
+  - Enemy
+  - Midground
+  - Character
+  - Foreground
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Foreground
+  - name: Background
     uniqueID: 3172018081
     locked: 0
-  - name: Character
+  - name: FarEnemy
+    uniqueID: 865687629
+    locked: 0
+  - name: HighGround
+    uniqueID: 2809781367
+    locked: 0
+  - name: Enemy
     uniqueID: 567595189
     locked: 0
-  - name: Background
+  - name: Midground
+    uniqueID: 1722894961
+    locked: 0
+  - name: Character
+    uniqueID: 3756488747
+    locked: 0
+  - name: Foreground
     uniqueID: 2921853937
+    locked: 0
+  - name: UI
+    uniqueID: 2926426753
     locked: 0
