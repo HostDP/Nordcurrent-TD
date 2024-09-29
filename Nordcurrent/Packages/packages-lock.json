@@ -1,5 +1,31 @@
 {
   "dependencies": {
+    "com.esotericsoftware.spine.spine-csharp": {
+      "version": "https://github.com/EsotericSoftware/spine-runtimes.git?path=spine-csharp/src#4.2",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "aa932c6507f8cf3340512a5ab65fb79fea547b52"
+    },
+    "com.esotericsoftware.spine.spine-unity": {
+      "version": "https://github.com/EsotericSoftware/spine-runtimes.git?path=spine-unity/Assets/Spine#4.2",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.esotericsoftware.spine.spine-csharp": "4.2.0"
+      },
+      "hash": "aa932c6507f8cf3340512a5ab65fb79fea547b52"
+    },
+    "com.esotericsoftware.spine.timeline": {
+      "version": "https://github.com/EsotericSoftware/spine-runtimes.git?path=spine-unity/Modules/com.esotericsoftware.spine.timeline#4.2",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.timeline": "1.2.10",
+        "com.esotericsoftware.spine.spine-unity": "4.2.13"
+      },
+      "hash": "aa932c6507f8cf3340512a5ab65fb79fea547b52"
+    },
     "com.unity.2d.animation": {
       "version": "7.0.9",
       "depth": 1,
@@ -196,7 +222,7 @@
     },
     "com.unity.timeline": {
       "version": "1.6.4",
-      "depth": 0,
+      "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.modules.audio": "1.0.0",
