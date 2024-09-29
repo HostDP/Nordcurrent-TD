@@ -83,7 +83,8 @@ namespace EasyParallax
 
         private float CalculateX(Vector3 startingPos)
         {
-            return Mathf.FloorToInt(startingPos.x + spriteWidth) -
+            //return Mathf.FloorToInt(startingPos.x + spriteWidth) -
+            return startingPos.x + spriteWidth -
                    spriteRepositionCorrection * transform.lossyScale.magnitude;
         }
 
