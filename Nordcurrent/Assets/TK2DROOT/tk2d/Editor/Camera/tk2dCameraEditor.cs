@@ -194,8 +194,13 @@ public class tk2dCameraEditor : Editor
 			_target.nativeResolutionHeight = (int)nativeRes.y;
 		}
 
+		//Debug.Log($"gameViewFound:{gameViewFound}, gameViewResolutionSet:{gameViewResolutionSet}");	
 		// Preview resolution
-		if (gameViewFound && gameViewResolutionSet) {
+		if (true) {
+			_target.forceResolution.Set( 1920, 1080 );
+			GUI.changed = true;
+		}
+		else if (gameViewFound && gameViewResolutionSet) {
 			if (_target.forceResolutionInEditor == false || _target.forceResolution.x != gameViewPixelWidth || _target.forceResolution.y != gameViewPixelHeight) {
 				_target.forceResolutionInEditor = true;
 				_target.forceResolution.Set( gameViewPixelWidth, gameViewPixelHeight );

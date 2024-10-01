@@ -365,7 +365,10 @@ public class tk2dCamera : MonoBehaviour
 	public static bool Editor__GetGameViewSize(out float width, out float height, out float aspect) {
 		try {
 			Editor__gameViewReflectionError = false;
-
+			width = 1920;
+			height = 1080;
+			aspect = width/height;
+			return true;
 			System.Type gameViewType = System.Type.GetType("UnityEditor.GameView,UnityEditor");
 			System.Reflection.MethodInfo GetMainGameView = gameViewType.GetMethod("GetMainGameView", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.NonPublic);
 			object mainGameViewInst = GetMainGameView.Invoke(null, null);

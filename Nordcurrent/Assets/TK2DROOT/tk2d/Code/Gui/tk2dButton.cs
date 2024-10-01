@@ -211,7 +211,8 @@ public class tk2dButton : MonoBehaviour
 	}
 	
 	IEnumerator coHandleButtonPress(int fingerId)
-	{
+	{	
+		Debug.Log ("clicked2");
 		buttonDown = true; // inhibit processing in Update()
 		bool buttonPressed = true; // the button is currently being pressed
 		
@@ -395,6 +396,7 @@ public class tk2dButton : MonoBehaviour
 		{
 			if (Input.GetMouseButtonDown(0))
 	        {
+	        	Debug.Log ("clicked1");
 	            Ray ray = viewCamera.ScreenPointToRay(Input.mousePosition);
 				RaycastHit hitInfo;
 #if !STRIP_PHYSICS_3D

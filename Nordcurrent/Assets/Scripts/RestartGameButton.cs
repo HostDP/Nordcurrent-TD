@@ -1,9 +1,11 @@
 ﻿using UnityEngine.SceneManagement;
+using UnityEngine;
 
 public class RestartGameButton : ExitButton
 {
-    protected override void Button_ButtonPressedEvent(tk2dButton source)
+    public void Button_ButtonPressedEvent()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1;
     }
 }
